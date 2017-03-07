@@ -1,0 +1,12 @@
+ AREA LAB3A, CODE , READONLY
+ EXPORT ques4a
+ 
+ques4a
+	MOV R0, #0x40000000
+	LDR R1, [R0];
+	LDR R2, [R0, #4];
+	
+	CMP R1, R2;
+	ADDGT R3,R3,#0xFF;
+STOP B STOP
+	END
